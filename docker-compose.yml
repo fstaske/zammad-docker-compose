@@ -101,8 +101,8 @@ services:
 
   zammad-websocket:
     command: ["zammad-websocket"]
-    Ports:
-    - 6042:6042
+    ports:
+      - "6042:6042"
     depends_on:
       - zammad-memcached
       - zammad-railsserver
